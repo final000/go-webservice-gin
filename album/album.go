@@ -1,0 +1,5 @@
+package albumpack
+
+func GetAbc() {
+
+}

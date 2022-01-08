@@ -1,6 +1,7 @@
 package main
 
 import (
+	albumpack "example/web-service-gin/album"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -22,6 +23,7 @@ var albums = []album{
 func getAlbums(c *gin.Context) {
 	c.JSON(http.StatusOK, albums)
 
+	albumpack.GetAbc()
 }
 
 func getAlbumByID(c *gin.Context) {
